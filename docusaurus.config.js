@@ -1,19 +1,19 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-require('dotenv').config();
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+require("dotenv").config();
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Metaverse Knowledge Kit',
-  tagline: 'Seamlessly build your Metaverse on Klaytn',
+  title: "메타버스 지식 상자",
+  tagline: "Seamlessly build your Metaverse on Klaytn",
   //@ts-ignore
   url: process.env.URL,
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -27,40 +27,40 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-    path: 'i18n',
+    defaultLocale: "en",
+    locales: ["en"],
+    path: "i18n",
     localeConfigs: {
       en: {
-        htmlLang: 'en-GB',
+        htmlLang: "en-GB",
       },
     },
   },
   plugins: [
     [
-      require.resolve('docusaurus-lunr-search'),
+      require.resolve("docusaurus-lunr-search"),
       {
-        languages: ['en', 'ko'], // language codes
+        languages: ["en", "ko"], // language codes
       },
     ],
   ],
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            'https://github.com/klaytn/klaytn-metaverse-package-docs/edit/main',
+            "https://github.com/klaytn/klaytn-metaverse-package-docs/edit/main",
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/klaytn/klaytn-metaverse-package-docs/edit/main',
+            "https://github.com/klaytn/klaytn-metaverse-package-docs/edit/main",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -69,102 +69,102 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/klaytn.png',
+      image: "img/klaytn.png",
       navbar: {
-        title: 'Metaverse Knowledge Kit',
+        title: "Metaverse Knowledge Kit",
         logo: {
-          alt: 'Klaytn Logo',
-          src: 'img/klaytn.png',
-          target: '_self',
+          alt: "Klaytn Logo",
+          src: "img/klaytn.png",
+          target: "_self",
           width: 32,
           height: 42,
-          className: 'custom-navbar-logo-class',
+          className: "custom-navbar-logo-class",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Docs",
           },
           {
-            type: 'search',
-            position: 'right',
+            type: "search",
+            position: "right",
           },
           {
-            href: 'https://github.com/klaytn/klaytn-metaverse-package-docs',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/klaytn/klaytn-metaverse-package-docs",
+            label: "GitHub",
+            position: "right",
           },
           {
-            type: 'localeDropdown',
-            position: 'right',
+            type: "localeDropdown",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'light',
+        style: "light",
         links: [
           {
-            title: 'Explore other Resources',
+            title: "Explore other Resources",
             items: [
               {
-                label: 'Github',
-                href: 'https://github.com/klaytn',
+                label: "Github",
+                href: "https://github.com/klaytn",
               },
               {
-                label: 'Klaytn Docs',
-                href: 'https://docs.klaytn.foundation/',
+                label: "Klaytn Docs",
+                href: "https://docs.klaytn.foundation/",
               },
               {
-                label: 'Developer Portal',
-                href: 'http://developer.klaytn.foundation/',
+                label: "Developer Portal",
+                href: "http://developer.klaytn.foundation/",
               },
               {
-                label: 'Blog',
-                href: 'https://www.klaytn.foundation/blog/',
+                label: "Blog",
+                href: "https://www.klaytn.foundation/blog/",
               },
             ],
           },
           {
-            title: 'Join our Dev Community',
+            title: "Join our Dev Community",
             items: [
               {
-                label: 'Forum',
-                href: 'https://forum.klaytn.foundation/',
+                label: "Forum",
+                href: "https://forum.klaytn.foundation/",
               },
               {
-                label: 'Discord',
-                href: 'https://discord.io/KlaytnOfficial',
+                label: "Discord",
+                href: "https://discord.io/KlaytnOfficial",
               },
               {
-                label: 'Telegram',
-                href: 'https://t.me/Klaytn_EN',
+                label: "Telegram",
+                href: "https://t.me/Klaytn_EN",
               },
             ],
           },
           {
-            title: 'Follow us on Social Media',
+            title: "Follow us on Social Media",
             items: [
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/klaytn_official',
+                label: "Twitter",
+                href: "https://twitter.com/klaytn_official",
               },
               {
-                label: 'Dev Twitter',
-                href: 'https://twitter.com/BuildonKlaytn',
+                label: "Dev Twitter",
+                href: "https://twitter.com/BuildonKlaytn",
               },
               {
-                label: 'Facebook',
-                href: 'https://www.facebook.com/groups/klaytndevelopers',
+                label: "Facebook",
+                href: "https://www.facebook.com/groups/klaytndevelopers",
               },
               {
-                label: 'Reddit',
-                href: 'https://www.reddit.com/r/klaytn/',
+                label: "Reddit",
+                href: "https://www.reddit.com/r/klaytn/",
               },
               {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/c/Klaytn_official',
+                label: "YouTube",
+                href: "https://www.youtube.com/c/Klaytn_official",
               },
             ],
           },
